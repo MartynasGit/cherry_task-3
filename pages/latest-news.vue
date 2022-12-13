@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Latest News</h2>
+        <h2 class="text-5xl">Latest News</h2>
     </div>
 </template>
 

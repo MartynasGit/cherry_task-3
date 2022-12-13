@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="container px-16 pt-7">
         <header>
-            <nav>
+            <nav class="container mx-auto flex justify-between text-base">
                 <div>
-                    <NuxtLink to="/">=</NuxtLink>
-                    <ul>
+                    <ul class="flex gap-8">
+                        <li><NuxtLink class="font-bold mr-5">=</NuxtLink></li>
                         <li>
                             <NuxtLink to="/">Home</NuxtLink>
                         </li>
@@ -16,18 +16,24 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="flex gap-5">
                     <NuxtLink to="/contact">Contact Us</NuxtLink>
+                    <ColorMode/>      
                 </div>
             </nav>
         </header>
-        <div>
+        <div class="mt-10">
             <slot></slot>
         </div>
     </div>
 </template>
-<style scoped>
+<style>
 .router-link-exact-active {
     color: #b0695c;
 }
 </style>
+
+<script setup>
+const colorMode = useColorMode()
+console.log(colorMode.preference)
+</script>
