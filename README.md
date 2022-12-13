@@ -1,3 +1,4 @@
+App is live - https://cherry-task-3.netlify.app/
 
 ## Task - 2
 Using  Vue + Nuxt  TypeScript recreate page design with transitions - https://dribbble.com/shots/17882771-Online-News-Website.
