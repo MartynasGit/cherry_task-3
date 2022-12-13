@@ -6,33 +6,24 @@
 
 <script setup>
 const colorMode = useColorMode()
-let darkMode = false
+let colorModeSwitch = true
 function handleClick() {
-    if(darkMode === false){
-        colorMode.value = 'dark'
-        darkMode = true;
+
+    if (colorModeSwitch) {
+        colorMode.preference = 'dark';
+        colorModeSwitch = false;
     }
-    else{
-        colorMode.value = 'system'
-        darkMode= false
+    else {
+        colorMode.preference = 'system'
+        colorModeSwitch = true;
     }
-    
-    
 }
 </script>
 
 <style >
-body {
-    background-color: #f9f4ed;
-}
-
-.dark-mode body {
-    background-color: #2a2a2a;
-    color: #eaeaea;
-}
 input[type="checkbox"] {
     -webkit-appearance: none;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     -moz-appearance: none;
     appearance: none;
     position: relative;
@@ -44,7 +35,7 @@ input[type="checkbox"] {
 }
 
 input:checked[type="checkbox"] {
-    background-color: #2a2a2a;
+    background-color: #ffffff;
 }
 
 input[type="checkbox"]::before {
@@ -52,29 +43,21 @@ input[type="checkbox"]::before {
     position: absolute;
     width: calc(1rem * 0.75);
     height: calc(1rem * 0.75);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 5rem;
-    top: calc(1rem * 0.13);
+    top: calc(1rem * 0.125);
     left: 0.2rem;
     transition: 0.2s;
 }
 
 input:checked[type="checkbox"]::before {
     left: 1rem;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 .checkboxText {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     margin-left: 15px;
-}
-body {
-    background-color: #f9f4ed;
-}
-
-.dark-mode body {
-    background-color: #2a2a2a;
-    color: #eaeaea;
 }
 </style>
