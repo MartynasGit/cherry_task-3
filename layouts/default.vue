@@ -4,9 +4,17 @@
             <nav>
                 <div>
                     <NuxtLink to="/">=</NuxtLink>
-                    <NuxtLink to="/">Home</NuxtLink>
-                    <NuxtLink to="/latest-news">Latest News</NuxtLink>
-                    <NuxtLink to="/reviews">Reviews</NuxtLink>
+                    <ul>
+                        <li>
+                            <NuxtLink to="/">Home</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/latest-news">Latest News</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/reviews">Reviews</NuxtLink>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <NuxtLink to="/contact">Contact Us</NuxtLink>
