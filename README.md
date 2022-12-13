@@ -1,42 +1,22 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Task - 2
+Using  Vue + Nuxt  TypeScript recreate page design with transitions - https://dribbble.com/shots/17882771-Online-News-Website.
 
-## Setup
+Also create news sectiin funtionality(button will be marked and articles filtered by category).
 
-Make sure to install the dependencies:
 
-```bash
-# yarn
-yarn install
+## Installation
 
-# npm
-npm install
+1. git clone https://github.com/MartynasGit/cherry_task-3.git
+2. npm install
+3. npm run dev
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+Application will be live at http://localhost:3000/
 
-## Development Server
+## Author
 
-Start the development server on http://localhost:3000
+Project is created by Martynas Gumuliauskas.
 
-```bash
-npm run dev
-```
+Github - MartynasGit.
 
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Linkedin - https://www.linkedin.com/in/martynasgum/
