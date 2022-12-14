@@ -42,16 +42,17 @@ input[type="checkbox"]::before {
     content: " ";
     position: absolute;
     width: calc(1rem * 0.75);
+    left: 1rem;
     height: calc(1rem * 0.75);
     background-color: rgb(255, 255, 255);
     border-radius: 5rem;
     top: calc(1rem * 0.125);
-    left: 0.2rem;
+
     transition: 0.2s;
 }
 
 input:checked[type="checkbox"]::before {
-    left: 1rem;
+    left: 0.2rem;
     background-color: rgb(0, 0, 0);
 }
 

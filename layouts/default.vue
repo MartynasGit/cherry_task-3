@@ -1,11 +1,11 @@
 <template>
-    <div class="container px-16 pt-7">
+    <div class="sm:px-20 sm:py-5">
         <header>
-            <nav class="container mx-auto flex justify-between text-base">
+            <nav class=" mx-auto flex justify-between text-base p-4">
                 <div>
-                    <ul class="flex gap-8">
+                    <ul class="flex sm:gap-2 gap-2 md:gap-8" >
                         <li>
-                            <NuxtLink class="font-bold mr-5">=</NuxtLink>
+                            <NuxtLink class="sm:mr-5">=</NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/">Home</NuxtLink>
@@ -18,13 +18,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex gap-5">
-                    <NuxtLink to="/contact">Contact Us</NuxtLink>
+                <div class="flex sm:gap-5">
+                    <NuxtLink to="/contact" class="sm:mx-0 mx-2">Contact Us</NuxtLink>
                     <ColorMode />
                 </div>
             </nav>
         </header>
-        <div class="mt-10">
+        <div class="mx-auto p-4 container">
             <slot></slot>
         </div>
     </div>
