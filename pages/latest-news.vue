@@ -11,8 +11,9 @@
             <div v-for="b  in articles">
                 <div class="articles-item">
                     <img :src="b.media" :alt="b.title"  class="image-max-height"/>
-                    <p>{{ b.title }}</p>
-                    <p>{{ b.excerpt }}</p>
+                    <p class="text-xl font-bold">{{ b.title }}</p>
+                    <p class="text-sm">{{ b.excerpt }}</p>
+                    <span color="text-gray-700">{{b.author}}</span>
                 </div>
             </div>
         </div>
@@ -37,7 +38,7 @@ export default {
         async getArticle(topic) {
             this.articles = await fetch(`http://localhost:3001/articles?topic=${topic}&_limit=5`).then(res => res.json())
         }
-    }
+    },
 }
 </script>
 
