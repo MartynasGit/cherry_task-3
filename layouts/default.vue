@@ -24,7 +24,7 @@
                 </div>
             </nav>
         </header>
-        <div class="p-2 container">
+        <div class="p-2">
             <slot></slot>
         </div>
     </div>
