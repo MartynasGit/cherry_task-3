@@ -1,5 +1,5 @@
 ## Task - 3
-Using  Vue + Nuxt  TypeScript recreate page design with transitions - https://dribbble.com/shots/17882771-Online-News-Website.
+Using  Vue + Nuxt  TypeScript recreate page design with transitions - https://dribbble.com/shots/17882771-Online-News-Website
 
 Also create news sectiin funtionality(button will be marked and articles filtered by category).
 

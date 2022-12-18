@@ -1,11 +1,12 @@
 <template>
     <div class="sm:px-20 sm:py-2">
+        <Title>Task-3</Title>
         <header>
             <nav class=" mx-auto flex justify-between text-base p-3">
                 <div>
                     <ul class="flex sm:gap-2 gap-2 md:gap-8" >
                         <li>
-                            <NuxtLink class="sm:mr-5">=</NuxtLink>
+                            <NuxtLink class="sm:mr-2 text-xl">≡</NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/">Home</NuxtLink>

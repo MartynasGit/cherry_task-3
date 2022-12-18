@@ -19,19 +19,18 @@ body {
 }
 
 .articles-grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding-block: 2rem;
-    width: min(100%)
-  }
-  .image-max-height{
-    max-height: 300px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-block: 2rem;
+  width: min(100%);
 }
-  .articles-item {
-    border-bottom: 2px solid #eaeaea;
-    max-height: 600px;
-    min-height: 500px;
-  }
-  
+.image-max-height {
+  max-height: 300px;
+}
+.articles-item {
+  border-bottom: 2px solid #eaeaea;
+  max-height: 600px;
+  min-height: 500px;
+}
